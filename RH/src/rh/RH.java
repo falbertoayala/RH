@@ -27,6 +27,7 @@ public class RH {
         int contador =0;
         String nombre;
         double sueldo;
+        //Operario tmp;
         do{
             System.out.println("Nombre del empleado");
             nombre = lea.next();
@@ -69,9 +70,17 @@ public class RH {
                 System.out.println(tmp.getNombre() + "tiene" + tmp.getHoraextra()+ "horas extras");
             }
         }
-         
-        
+        //Empleados con regalias 
+        //Operario tmp2;
+        for(int i=0; i<emp.length;i++){
+            if(emp[i] instanceof Operario ){
+                tmp = (Operario) emp[i];
+                if(tmp.isRegalias());
+                   System.out.println(tmp.getNombre());
+                }
+            }
         
     }
     
-}
+    }
+
