@@ -17,5 +17,15 @@ public class Gerentes extends Empleado{
         super(nombre, sueldo);
         this.tienecarro = tienecarro;
         this.vacacionespagadas = vacacionespagadas;
+        
+        
+    }
+
+    public boolean isTienecarro() {
+        return tienecarro;
+    }
+
+    public boolean isVacacionespagadas() {
+        return vacacionespagadas;
     }
 }

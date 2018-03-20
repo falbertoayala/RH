@@ -58,7 +58,7 @@ public class RH {
         
         System.out.println("Sueldos");
         
-        for(int i = 0; i<=emp.length;i++){
+        for(int i = 0; i<emp.length;i++){
             System.out.println("nombre" + emp[i].getNombre()+ " ----------- Sueldo: " + emp[i].getSueldo());
         }
         
@@ -72,13 +72,15 @@ public class RH {
         }
         //Empleados con regalias 
         //Operario tmp2;
-        for(int i=0; i<emp.length;i++){
+       for(int i=0; i<emp.length;i++){
             if(emp[i] instanceof Operario ){
                 tmp = (Operario) emp[i];
                 if(tmp.isRegalias());
-                   System.out.println(tmp.getNombre());
+                   System.out.println(tmp.getNombre()+ " tiene Regalias");
                 }
             }
+       
+       
         
     }
     
